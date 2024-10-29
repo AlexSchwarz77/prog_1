@@ -53,11 +53,10 @@ pwd = "Dies ist kein gültiges Passwort";
 
 if(user == "Peter"){
     if (pwd == "Dies ist kein gültiges Passwort") {
-        console.log("Hallo ", user);
-        
+        console.log("Hallo ", user);   
     } else {
         console.log("Falsches Passwort");
     }
 } else {
-    console.log("User nicht gefunden, Bitte überprüfen sie ihren Benutzernamen oder regestrieren sie sich");
+    console.log("User nicht gefunden, Bitte überprüfen sie ihren Benutzernamen oder registrieren sie sich");
 }

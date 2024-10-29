@@ -28,7 +28,7 @@ let bool = true;
  * Zahlen:
  * number (Ganzzahlen und Fließkomma)
  * BigInt 
- * Zeichenketten
+ * Zeichenketten:
  * String
  * Boolesche:
  * Boolean
@@ -128,6 +128,23 @@ banthaa.change("white");
 
 let hase = new StarWarsTiere("Erde", "Hase", "Weiss", 5, 150, "Land");
 console.log(hase.getFarbe());
+
+let num = 0;
+
+num += 1; // num = num + 1
+num -= 2;// num = num - 2
+num *= -3;
+num /= 2;
+num **= 1.5;
+num %= 0.1;
+
+
+
+
+console.log(num--);
+console.log(num);
+
+
 
 
   
