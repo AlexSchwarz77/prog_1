@@ -88,10 +88,12 @@ main {
   
 }
 .slider {
+  position: relative;
     width: 100vw;
-    /* height: 150px; */
+    height: 150px;
     top: 10px;
     grid-area: slider;
+    overflow: hidden;
   }
 .wrapper-offers {
   
@@ -114,9 +116,43 @@ main {
   height: 100%;
   
 } 
-.slider-img{
+.slider-img{ 
   visibility: hidden;
+ z-index: -9999; 
 }
 .active{
+  position: relative;
+  
   visibility: visible;
+  background-size: contain;
 }
+
+.prevBtn{
+  position: absolute;
+    left: 15px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    /* z-index: 10; */
+}
+.nextBtn{
+  position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: rotate(180deg);
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    /* z-index: 10; */
+}
+
+
+
