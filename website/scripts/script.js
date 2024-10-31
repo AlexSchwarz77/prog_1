@@ -1,9 +1,23 @@
-const prevBtn = document.getElementsByClassName("slider-img");
+const prevBtn = document.querySelector(".prevBtn");
+const img = document.querySelectorAll(".slider-img")
+console.log(img);
+let index = 0;
+
+ prevBtn.addEventListener("click",  //(e) => {
+    
+    prevImg
+    
+// }
+) 
 
 
-    for(i= 0; i< prevBtn.length; i++){
-        prevBtn[i].classList.add("active");
-        console.log(prevBtn[i]);
-        
-    }
+function prevImg(){
+    document.querySelector('.slider-img.active').classList.remove('active');
+    let i   = img[3]
+    i.classList.add("active");
+    img.prepend(i)
+    console.log(img);
+    
 
+
+}

@@ -116,15 +116,14 @@ main {
   height: 100%;
   
 } 
-.slider-img{ 
+.slider-img{ background-size: contain;
   visibility: hidden;
  z-index: -9999; 
 }
 .active{
-  position: relative;
-  
+  /* position: relative; */
   visibility: visible;
-  background-size: contain;
+  
 }
 
 .prevBtn{
