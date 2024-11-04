@@ -119,11 +119,26 @@ main {
 .slider-img{ 
   background-size: contain;
   display: none;
+  opacity: 0;
 }
 .active{
-
+  animation: fadeIn 1s ease-in 0.1s 1 normal forwards;
+  transition: 3s;
   display: block;
   
+}
+
+@keyframes fadeIn{
+  0%, 75%{
+    opacity: 0;
+  }
+  25%, 100%{
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  50%{
+    opacity: 0.5;
+  }
 }
 
 .prevBtn{
