@@ -116,13 +116,13 @@ main {
   height: 100%;
   
 } 
-.slider-img{ background-size: contain;
-  visibility: hidden;
- z-index: -9999; 
+.slider-img{ 
+  background-size: contain;
+  display: none;
 }
 .active{
-  /* position: relative; */
-  visibility: visible;
+
+  display: block;
   
 }
 
