@@ -1,6 +1,7 @@
 let arr = [0,1,2,3,4,5,6,7,8,9];
 let arr2 = ["hallo", "welt", "geh", "sterben"]
 
+// Der klassischeFor-Loop
 for(let i = 0; i< 10; i++){
     // console.log(i);
 }
@@ -15,6 +16,7 @@ let uniqueList = new Set([1,2,3,4,4,5]);
 
 arr2 = [[1],[2,3],[4]]
 
+// Forof-Loop für Array, Map, Set
 for(let value of arr2){
     // console.log(value);   
 }
@@ -37,12 +39,15 @@ let map = new Map([
 
 // map.forEach(e => console.log(e));
 let numb = 0;
+
+// Kopfgesteuerte Schleife
 while(numb < 10){
     // console.log(numb);
     numb++   
 }
 
 let num2 = 0;
+// Fussgesteuerte Schleife
 do{
     console.log(num2);
     // num2++ 

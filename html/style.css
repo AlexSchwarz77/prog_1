@@ -1,13 +1,19 @@
+/* * dient um alle Elemente anzusprechen */
 *{
+    /* Position zu anderen Elementen */
     margin: 0;
+    /* Position innerhalb des Elements */
     padding: 0;
+    /* Wo ist der Rand der Elemente? */
     box-sizing: border-box;
 }
 
 :root{
+    /* In CSS können Variable angelegt werden */
     --danger: #00ff62;
 }
 
+/* ELementtags werden über ihren Namen angesprochen */
 body{
     background-color: blueviolet;
 }
@@ -18,9 +24,13 @@ a {
     color: violet;
     text-decoration: none;
 }
+
+/* :hover usw sind Pseudoklassen die nicht direkt, sondern nur im Zusammenhang mit einem ELement angesprochen werden könnens */
 a:hover{
     text-decoration: overline;
 }
+
+/* Klassen werden über einen . angesprochen */
 .nav-link{
     background-color: antiquewhite;
     color: var(--danger);

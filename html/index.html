@@ -1,25 +1,36 @@
+<!-- DOCTYPE dient als Hinweis für den Interpreter, dass es sich in diesem Fall um eine HTML Datei handelt  -->
 <!DOCTYPE html>
+<!-- Das lang Attribut gibt an in welcher Sprache  die Seite erstellt wurde bzw. für Screenreader-->
 <html lang="de">
+  <!-- Innerhalb des Head Tags werden Konfigurationen  für die Webseite vorgenommen, Wie etwa das "Einhängen" einer CSS Datei-->
   <head>
+    <!-- Welcher Zeichensatz soll verwendet werden? utf-8 -->
     <meta charset="UTF-8" />
+    <!-- Welchen Zoom soll die Seite beim laden haben? -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Wo befindet sich das Stylesheet?  -->
     <link rel="stylesheet" href="style.css">
     <title>Mein Titel</title>
   </head>
   <body>
+    <!-- Mit HTML5 wurden einige Tags eingeführt um unter anderem Barrierefreiheit zu vereinfachen 
+     Der Header ist die Kopfzeile des Dokuments-->
     <header class="nav-link">
+      <!-- Nav ist eine "Navigationsleiste" -->
       <nav>
+        <!-- a sind Anker um links zu Verfügung zu stellen -->
         <a id="home" class="nav-link" href="#">Home</a>
         <a id="home" class="nav-link" href="https://www.google.com">Google</a>
         <a class="nav-link" href="#">Kontakt</a>
       </nav>
     </header>
-
+    <!-- Main ist der Hauptinhalt einer Seite -->
     <main>
       <h1 class="nav-link"> Welcome to <span style="background-color: aquamarine;">my</span> Awesome Page</h1>
         <div>
             <img src="../img/handgezeichnete-cartoon-panda-illustration_23-2150456173.avif" alt="test">
         </div>
+        <!-- Inline CSS sollte weitest gehend vermieden werden. (style=""s)-->
         <p style="color: blue;"><i>Lorem</i> ipsum <em style="color: red;">dolor</em> sit amet consectetur adipisicing elit. Sunt quidem incidunt tenetur enim, <wbr>fugit accusantium maxime ratione cupiditate 
           asperiores quos minus, alias 
           temporibus suscipit, molestiae delectus 
@@ -29,6 +40,7 @@
           beatae harum consectetur est molestias expedita aperiam.
         </pre>
     </main>
+    <!-- Footer ist die Fusszeile einer Seite -->
     <footer>
         <a href="#">Impressum</a>
         <a href="#">Datenschutzerklärung</a>
